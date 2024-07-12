@@ -3,6 +3,16 @@
 	"EngineAssociation": "5.4",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "ObstacleAssault",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "Bridge",
@@ -12,6 +22,10 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "XRBase",
+			"Enabled": true
 		}
 	]
 }
