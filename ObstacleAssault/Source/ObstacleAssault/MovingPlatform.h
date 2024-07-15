@@ -23,6 +23,26 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere)
-	int32 MyInt = 0;
+private:
+	//Set travel speed + direction of platform
+	UPROPERTY(EditAnywhere, Category="Moving Parameters")
+	FVector PlatformVelocity = FVector(100, 0, 0);
+
+	//Set rotation speed
+	UPROPERTY(EditAnywhere, Category="Rotation Parameters")
+	FRotator RotationVelocity;
+
+	//Set allowed travel distance
+	UPROPERTY(EditAnywhere, Category="Moving Parameters")
+	float AllowedDistance = 100;
+
+	//Get the traveled distance (Only information purpose)
+	UPROPERTY(VisibleAnywhere, Category="Moving Parameters")
+	float MovedDistance = 0;
+
+	//Start location of platform in world
+	FVector StartLocation;
+
+	void MovePlatform(float DeltaTime);
+	void RotatePlatform(float DeltaTime);
 };
