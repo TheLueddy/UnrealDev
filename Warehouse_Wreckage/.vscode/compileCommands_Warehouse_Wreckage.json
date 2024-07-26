@@ -1,0 +1,42 @@
+[
+	{
+		"file": "/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/Source/Warehouse_Wreckage/BasePawn.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/.vscode/compileCommands_Warehouse_Wreckage/Warehouse_Wreckage.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/Source/Warehouse_Wreckage/BasePawn.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/.vscode/compileCommands_Warehouse_Wreckage/Warehouse_Wreckage.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/Source/Warehouse_Wreckage/Warehouse_Wreckage.Build.cs",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/.vscode/compileCommands_Warehouse_Wreckage/Warehouse_Wreckage.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/Source/Warehouse_Wreckage/Warehouse_Wreckage.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/.vscode/compileCommands_Warehouse_Wreckage/Warehouse_Wreckage.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/Source/Warehouse_Wreckage/Warehouse_Wreckage.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/patricksequeira/Documents/Programming/UnrealDev/Warehouse_Wreckage/.vscode/compileCommands_Warehouse_Wreckage/Warehouse_Wreckage.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	}
+]
