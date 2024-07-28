@@ -45,7 +45,8 @@ void ATower::Tick(float DeltaTime)
 
 void ATower::CheckFireCondition()
 {
-    if (CheckInFireRange())
+    if (Tank == nullptr) return;
+    if (CheckInFireRange() && Tank->bAlive)
     {
         Fire();
     }
@@ -61,4 +62,10 @@ bool ATower::CheckInFireRange()
     }
 
     return false;
+}
+
+void ATower::HandleDestruction()
+{
+    Super::HandleDestruction();
+    Destroy();
 }

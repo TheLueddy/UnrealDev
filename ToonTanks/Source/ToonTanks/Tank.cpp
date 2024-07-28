@@ -24,7 +24,8 @@ void ATank::BeginPlay()
 {
 	Super::BeginPlay();
 	
-    PlayerControllerRef = Cast<APlayerController>(GetController());
+    TankPlayerController = Cast<APlayerController>(GetController());
+    //TankPlayerController->bShowMouseCursor = true;
 
 }
 
@@ -33,10 +34,10 @@ void ATank::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-    if (PlayerControllerRef)
+    if (TankPlayerController)
     {
         FHitResult HitResult;
-        PlayerControllerRef->GetHitResultUnderCursor(
+        TankPlayerController->GetHitResultUnderCursor(
             ECollisionChannel::ECC_Visibility, 
             false,
             HitResult
@@ -44,6 +45,11 @@ void ATank::Tick(float DeltaTime)
 
         RotateTurret(HitResult.ImpactPoint);
     }
+}
+
+APlayerController* ATank::GetTankPlayerController() const
+{
+    return TankPlayerController;
 }
 
 void ATank::Move(float Value)
@@ -69,4 +75,13 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
     PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &ATank::Move);
     PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATank::Turn);
     PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ATank::Fire);
+}
+
+void ATank::HandleDestruction()
+{
+    Super::HandleDestruction();
+
+    SetActorHiddenInGame(true);
+    SetActorTickEnabled(false);
+    bAlive = false;
 }
